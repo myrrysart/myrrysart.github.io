@@ -18,6 +18,6 @@ To view my website, simply visit https://art-wizard.github.io/ in your web brows
 This is a personal portfolio website, so I'm not currently accepting contributions from others. However, if you notice any bugs or issues with the website, feel free to open an issue on this repository and I'll do my best to address it.
 
 ## Todo
-Tool to add pictures easily to their corresponding categories.
-Interactive and lightweight way to view workflow of each picture from start to finish, if available.
-Interactive and lightweight way to view 3d models and workflow, if available.
+- Tool to add pictures easily to their corresponding categories.
+- Interactive and lightweight way to view workflow of each picture from start to finish, if available.
+- Interactive and lightweight way to view 3d models and workflow, if available.
