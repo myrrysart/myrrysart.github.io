@@ -6,7 +6,7 @@ This is my personal art portfolio website, where I showcase my artwork and provi
 
 - Responsive design that adapts to different screen sizes and devices
 - Navigation bar that allows users to easily access different sections of the website
-- Image gallery that displays my artwork in a visually appealing and organized manner
+- Image gallery that displays my artwork in an organized manner
 - Contact section that provides users with a way to get in touch with me
 
 ## Usage
