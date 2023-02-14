@@ -1,29 +1,27 @@
-/* Default styles */
+/* The foundation of our house */
 body {
   font-family: Arial, sans-serif;
- margin-left: auto;
-margin-right: auto;
+  margin: 0;
 }
 
+/* The roof of our house */
 header {
   background-color: #333;
   color: #fff;
   padding: 20px;
 }
 
+/* The top-level floor of our house */
 nav ul {
-  margin-left: auto;
-  margin-right: auto;
   list-style: none;
- margin-left: auto;
-margin-right: auto;
+  margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center; /* Center the navigation links horizontally */
 }
 
+/* The navigation links */
 nav a {
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   padding: 10px;
   color: #fff;
@@ -36,29 +34,28 @@ nav a:hover {
   background-color: #555;
 }
 
+/* The main floor of our house */
 section {
-  margin-left: auto;
-  margin-right: auto;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow the content to wrap to the next row if it exceeds the width of the screen */
+  justify-content: center; /* Center the content horizontally */
 }
 
+/* The headings for the content sections */
 section h2 {
-  margin-left: auto;
-  margin-right: auto;
   font-size: 32px;
   margin-top: 0;
 }
 
+/* The content sections */
 section ul {
   list-style: none;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
   padding: 0;
 }
 
 section li {
-  margin-left: auto;
-  margin-right: auto;
   display: inline-block;
   vertical-align: top;
   width: 33%;
@@ -67,17 +64,15 @@ section li {
 }
 
 section img {
-  margin-left: auto;
-  margin-right: auto;
   max-width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 section p {
- margin-left: auto;
-margin-right: auto;
+  margin: 0;
 }
 
+/* The back-to-top button */
 #back-to-top {
   position: fixed;
   bottom: 20px;
@@ -105,12 +100,12 @@ margin-right: auto;
 
 @media only screen and (max-width: 768px) {
   section li {
-    width: 50%;
+    width: 50%; /* Make the content sections take up 50% of the screen width on smaller screens */
   }
 }
 
 @media only screen and (max-width: 480px) {
   section li {
-    width: 100%;
+    width: 100%; /* Make the content sections take up 100% of the screen width on even smaller screens */
   }
 }
