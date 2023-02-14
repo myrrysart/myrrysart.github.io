@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #c0c0c0;
+  background: linear-gradient(to bottom, #c0c0c0, #2e2a2a);
 }
 
 /* The roof of our house */
