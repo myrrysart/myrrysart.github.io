@@ -43,8 +43,10 @@ section {
 }
 
 section .contact {
-  display: block;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column; /* Stack the child elements vertically */
+  align-items: center; /* Center the child elements horizontally */
+  margin-top: 20px; /* Add some space between the "contact" section and the content above it */
 }
 
 /* The headings for the content sections */
