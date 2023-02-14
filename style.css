@@ -102,6 +102,6 @@ section p {
 
 @media only screen and (max-width: 480px) {
   section li {
-    width: 25%;
+    width: 100%;
   }
 }
