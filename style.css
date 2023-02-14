@@ -99,10 +99,16 @@ section p {
   section li {
     width: 50%;
   }
+  section image {
+    max-width: 50%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   section li {
     width: 100%;
+  }
+  section image {
+    max-width: 50%;
   }
 }
