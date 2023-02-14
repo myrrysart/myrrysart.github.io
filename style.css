@@ -21,10 +21,6 @@ nav li {
   margin-right: 10px;
 }
 
-nav li:last-child {
-  margin-right: 0;
-}
-
 nav a {
   display: block;
   padding: 10px;
