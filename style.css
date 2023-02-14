@@ -42,6 +42,11 @@ section {
   justify-content: center; /* Center the content horizontally */
 }
 
+section .contact {
+  display: block;
+  margin-bottom: 10px;
+}
+
 /* The headings for the content sections */
 section h2 {
   font-size: 32px;
