@@ -1,27 +1,23 @@
-/* The foundation of our house */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: linear-gradient(to bottom, #c0c0c0, #2e2a2a);
 }
 
-/* The roof of our house */
 header {
   background-color: #333;
   color: #fff;
   padding: 20px;
 }
 
-/* The top-level floor of our house */
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center; /* Center the navigation links horizontally */
+  justify-content: center; 
 }
 
-/* The navigation links */
 nav a {
   display: block;
   padding: 10px;
@@ -35,28 +31,25 @@ nav a:hover {
   background-color: #555;
 }
 
-/* The main floor of our house */
 section {
   padding: 20px;
   display: flex;
-  flex-wrap: wrap; /* Allow the content to wrap to the next row if it exceeds the width of the screen */
-  justify-content: center; /* Center the content horizontally */
+  flex-wrap: wrap; 
+  justify-content: center;
 }
 
 section .contact {
   display: flex;
-  flex-direction: column; /* Stack the child elements vertically */
-  align-items: center; /* Center the child elements horizontally */
-  margin-top: 20px; /* Add some space between the "contact" section and the content above it */
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20px; 
 }
 
-/* The headings for the content sections */
 section h2 {
   font-size: 32px;
   margin-top: 0;
 }
 
-/* The content sections */
 section ul {
   list-style: none;
   margin: 0;
@@ -72,7 +65,7 @@ section li {
 }
 
 section img {
-  max-width: 100%;
+  max-width: 400px;
   height: auto;
 }
 
@@ -80,7 +73,6 @@ section p {
   margin: 0;
 }
 
-/* The back-to-top button */
 #back-to-top {
   position: fixed;
   bottom: 20px;
@@ -104,11 +96,10 @@ section p {
   background-color: #777;
 }
 
-/* Media queries for smaller screens */
 
 @media only screen and (max-width: 768px) {
   section li {
-    width: 50%; /* Make the content sections take up 50% of the screen width on smaller screens */
+    width: 50%;
   }
 }
 
