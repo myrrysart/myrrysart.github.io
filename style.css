@@ -1,110 +1,171 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: linear-gradient(to bottom, #c0c0c0, #2e2a2a);
+	font-family: Arial, sans-serif;
+	margin: 0;
+	background: linear-gradient(to bottom, #c0c0c0, #2e2a2a);
+	color: #111;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center; 
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
 }
 
 nav a {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
-  background-color: #333;
-  border-radius: 3px;
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	background-color: #333;
+	border-radius: 3px;
 }
 
 nav a:hover {
-  background-color: #555;
+	background-color: #555;
 }
+
 
 section {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: center;
+	padding: 20px;
 }
 
-section .contact {
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  margin-top: 20px; 
+section#about,
+section#projects,
+section#contact {
+	display: block;
 }
 
-section h2 {
-  font-size: 32px;
-  margin-top: 0;
+h2 {
+	font-size: 32px;
+	margin-top: 0;
+	width: 100%;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.artwork-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.artwork-grid li {
+	min-width: 0;
+}
+
+.artwork-grid p {
+	margin: 0;
+}
+
+.artwork-grid img {
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+}
+
+section#projects .projects-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+}
+
+section#projects .project-card {
+	break-inside: avoid;
+}
+
+section#projects p {
+	margin: 8px 0;
+}
+
+section#projects a {
+	color: #117;
+}
+
+@media only screen and (max-width: 768px) {
+	section#projects .projects-grid {
+		grid-template-columns: 1fr;
+	}
 }
 
 section ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-section li {
-  display: inline-block;
-  vertical-align: top;
-  width: 33%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-section img {
-  max-width: 400px;
-  height: auto;
-}
-
-section p {
-  margin: 0;
+section .contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
 }
 
 #back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 36px;
-  color: #fff;
-  background-color: #333;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  z-index: 9999;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 36px;
+	color: #fff;
+	background-color: #333;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	z-index: 9999;
+	text-decoration: none;
 }
 
 #back-to-top:hover {
-  background-color: #555;
+	background-color: #555;
 }
 
 #back-to-top:active {
-  background-color: #777;
+	background-color: #777;
 }
 
-
 @media only screen and (max-width: 768px) {
-  section li {
-    width: 50%;
-  }
+	.artwork-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media only screen and (max-width: 480px) {
-  section li {
-    width: 100%; /* Make the content sections take up 100% of the screen width on even smaller screens */
-  }
+	.artwork-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+section#projects ul.project-gallery {
+	list-style: none;
+	margin: 8px 0 16px;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+section#projects ul.project-gallery li {
+	width: 260px;
+}
+
+section#projects ul.project-gallery img {
+	max-width: 260px;
+	height: auto;
+	border-radius: 4px;
 }

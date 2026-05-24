@@ -1,131 +1,169 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Art Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <link rel="stylesheet" href="style.css">
     <header>
       <nav>
-        <ul>
-          <li><a href="#Analog">Analog</a></li>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#analog">Analog</a></li>
           <li><a href="#digital">Digital</a></li>
           <li><a href="#photography">Photography</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <marquee><h5>Niinpä, ei se google aina kaikkea kerro. Mitä jos botit ovat jo meirän keskuudessamme?</h5></marquee>
       </nav>
     </header>
-    <section id="contact">
-      <div class="contact">
-        <h2>Contact</h2>
-        <p>hello@myrrys.art</p>
+    <section id="about">
+      <h2>About</h2>
+      <p>I do art and code.</p>
+      <p>Currently studying in Hive Helsinki.</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Single-threaded Ray-Tracer Engine (miniRT)</h3>
+          <p>Developed a functional 3D renderer in C using math primitives, following the ray-tracer challenge book</p>
+          <p><a href="https://github.com/myrrysart/miniRT">GitHub</a></p>
+          <ul class="project-gallery">
+            <li>
+              <p><a href="images/full/miniRT_raytracer_screenshot.png" target="_blank"><img src="images/thumb/miniRT_raytracer_screenshot.png" alt="Raytracer render"></a></p>
+              <p>Raytracer screenshot.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Single-threaded Fractal Explorer (fractol)</h3>
+          <p>Built a single-threaded interactive fractal renderer/explorer with realtime zooming and navigation.</p>
+          <p><a href="https://github.com/myrrysart/fractol">GitHub</a></p>
+          <ul class="project-gallery">
+            <li>
+              <p><a href="images/full/fractol_julia_set.png" target="_blank"><img src="images/thumb/fractol_julia_set.png" alt="Julia set"></a></p>
+              <p>Julia set screenshot.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Unix System Infrastructure Shell (mnshell)</h3>
+          <p>Recreated a minimalist POSIX-compatible system command interpreter to build a deep structural understanding of OS architecture.</p>
+          <p><a href="https://github.com/myrrysart/mnshell">GitHub</a></p>
+          <ul class="project-gallery">
+            <li>
+              <p><a href="images/full/mnshell_screenshot.png" target="_blank"><img src="images/thumb/mnshell_screenshot.png" alt="Unix shell"></a></p>
+              <p>Shell screenshot.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Persistent Vim File Bookmarks (stick.vim)</h3>
+          <p>A Vim plugin for quick file bookmarks with a popup menu and persistence across sessions.</p>
+          <p><a href="https://github.com/myrrysart/stick.vim">GitHub</a></p>
+          <ul class="project-gallery">
+            <li>
+              <p><a href="images/full/stick_vim_screenshot.png" target="_blank"><img src="images/thumb/stick_vim_screenshot.png" alt="Stick.vim bookmarks"></a></p>
+              <p>Stick.vim plugin screenshot.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Embedded 12-Key Chorded Keyboard</h3>
+          <p>Designed and built a custom, hardware-minimalist mechanical keyboard from scratch using a Pico 2W.</p>
+          <p><a href="https://github.com/myrrysart/chorded-keyboard">GitHub</a></p>
+          <ul class="project-gallery">
+            <li>
+              <p><a href="images/full/peal_keyboardv01.webp" target="_blank"><img src="images/thumb/peal_keyboardv01.webp" alt="Peal keyboard v01"></a></p>
+              <p>Prototype v01 (front).</p>
+            </li>
+            <li>
+              <p><a href="images/full/peal_keyboardv01_back.webp" target="_blank"><img src="images/thumb/peal_keyboardv01_back.webp" alt="Peal keyboard v01 back"></a></p>
+              <p>Prototype v01 (back).</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section id="Analog">
+    <section id="analog">
       <h2>Analog</h2>
-      <ul>
+      <div class="artwork-grid">
         <li>
-          <a href="oil_squeezeSipAndGrindFramed.jpg" target="_blank">
-             <img src="thumb_oil_squeezeSipAndGrindFramed.jpg">
-          </a>
+          <p><a href="images/full/oil_squeezeSipAndGrindFramed.jpg" target="_blank"><img src="images/thumb/oil_squeezeSipAndGrindFramed.jpg" alt="Squeeze, Sip, and Grind"></a></p>
           <p>Oil on canvas.</p>
         </li>
         <li>
-          <a href="analog_anatomyStudy.jpeg" target="_blank">
-             <img src="thumb_analog_anatomyStudy.jpeg">
-          </a>
+          <p><a href="images/full/analog_anatomyStudy.jpeg" target="_blank"><img src="images/thumb/analog_anatomyStudy.jpeg" alt="Anatomy Study"></a></p>
           <p>Pencil on paper.</p>
         </li>
         <li>
-          <a href="analog_headstudies.jpg" target="_blank">
-             <img src="thumb_analog_headstudies.jpg">
-          </a>
+          <p><a href="images/full/analog_headstudies.jpg" target="_blank"><img src="images/thumb/analog_headstudies.jpg" alt="Head Studies"></a></p>
           <p>Ink and markers on paper.</p>
         </li>
-
-      </ul>
+      </div>
     </section>
     <section id="digital">
       <h2>Digital</h2>
-      <ul>
+      <div class="artwork-grid">
         <li>
-          <a href="digital_starvingSaint.png" target="_blank">
-             <img src="thumb_digital_starvingSaint.png">
-          </a>
-          <p>Art for a book by Juho Pohjalainen, "Starving Saint".</p>
+          <p><a href="images/full/digital_starvingSaint.png" target="_blank"><img src="images/thumb/digital_starvingSaint.png" alt="Starving Saint"></a></p>
+          <p>Art for a book by Juho Pohjalainen.</p>
         </li>
         <li>
-          <a href="digital_stoicAndStonefaced.png" target="_blank">
-             <img src="thumb_digital_stoicAndStonefaced.png">
-          </a>
+          <p><a href="images/full/digital_stoicAndStonefaced.png" target="_blank"><img src="images/thumb/digital_stoicAndStonefaced.png" alt="Stoic and Stonefaced"></a></p>
           <p></p>
         </li>
         <li>
-          <a href="digital_uniVsMia.png" target="_blank">
-             <img src="thumb_digital_uniVsMia.png">
-          </a>
-          <p>Poster art for a short film, "Uni vs Miä".</p>
+          <p><a href="images/full/digital_uniVsMia.png" target="_blank"><img src="images/thumb/digital_uniVsMia.png" alt="Uni vs Miä"></a></p>
+          <p>Poster art for a short film.</p>
         </li>
         <li>
-          <a href="digital_noita.png" target="_blank">
-             <img src="thumb_digital_noita.png">
-          </a>
+          <p><a href="images/full/digital_noita.png" target="_blank"><img src="images/thumb/digital_noita.png" alt="Noita"></a></p>
+          <p>A little doodle for floppy hat</p>
+        </li>
+        <li>
+          <p><a href="images/full/digital_praedorMonster.png" target="_blank"><img src="images/thumb/digital_praedorMonster.png" alt="Praedor Monster"></a></p>
+          <p>Fan art of a monster for the Finnish TTRPG Praedor</p>
+        </li>
+        <li>
+          <p><a href="images/full/digital_skeletonAxesQuestions.jpg" target="_blank"><img src="images/thumb/digital_skeletonAxesQuestions.jpg" alt="Skeleton Axes Questions"></a></p>
           <p></p>
         </li>
-        <li>
-          <a href="digital_praedorMonster.png" target="_blank">
-             <img src="thumb_digital_praedorMonster.png">
-          </a>
-          <p></p>
-        </li>
-        <li>
-          <a href="digital_skeletonAxesQuestions.jpg" target="_blank">
-             <img src="thumb_digital_skeletonAxesQuestions.jpg">
-          </a>
-          <p></p>
-        </li>
-        <li>
-
-      </ul>
+      </div>
     </section>
     <section id="photography">
       <h2>Photography</h2>
-      <ul>
+      <div class="artwork-grid">
         <li>
-          <a href="photo_streetsOfKotka.jpg" target="_blank">
-             <img src="thumb_photo_streetsOfKotka.jpg">
-          </a>
+          <p><a href="images/full/photo_streetsOfKotka.jpg" target="_blank"><img src="images/thumb/photo_streetsOfKotka.jpg" alt="Streets of Kotka 1"></a></p>
           <p>Kotka streets.</p>
         </li>
         <li>
-          <a href="photo_streetsOfKotka2.jpeg" target="_blank">
-             <img src="thumb_photo_streetsOfKotka2.jpeg">
-          </a>
+          <p><a href="images/full/photo_streetsOfKotka2.jpeg" target="_blank"><img src="images/thumb/photo_streetsOfKotka2.jpeg" alt="Streets of Kotka 2"></a></p>
           <p>More Kotka streets.</p>
         </li>
         <li>
-          <a href="photo_streetsOfKotka3.jpg" target="_blank">
-             <img src="thumb_photo_streetsOfKotka3.jpg">
-          </a>
+          <p><a href="images/full/photo_streetsOfKotka3.jpg" target="_blank"><img src="images/thumb/photo_streetsOfKotka3.jpg" alt="Streets of Kotka 3"></a></p>
           <p>And more Kotka streets.</p>
         </li>
         <li>
-          <a href="photo_streetsOfHelsinki.jpg" target="_blank">
-             <img src="thumb_photo_streetsOfHelsinki.jpg">
-          </a>
+          <p><a href="images/full/photo_streetsOfHelsinki.jpg" target="_blank"><img src="images/thumb/photo_streetsOfHelsinki.jpg" alt="Streets of Helsinki 1"></a></p>
           <p>Helsinki.</p>
         </li>
         <li>
-          <a href="photo_streetsOfHelsinki2.jpg" target="_blank">
-             <img src="thumb_photo_streetsOfHelsinki2.jpg">
-          </a>
+          <p><a href="images/full/photo_streetsOfHelsinki2.jpg" target="_blank"><img src="images/thumb/photo_streetsOfHelsinki2.jpg" alt="Streets of Helsinki 2"></a></p>
           <p>Helsinki.</p>
         </li>
-      </ul>
+      </div>
     </section>
-    <a href="#" id="back-to-top" title="Back to top">^</a>
+    <section id="contact">
+      <div class="contact">
+        <h2>Contact</h2>
+        <p><a href="mailto:hello@myrrys.art">hello@myrrys.art</a></p>
+      </div>
+    </section>
+    <p><a href="#" id="back-to-top" title="Back to top">^</a></p>
   </body>
 </html>
