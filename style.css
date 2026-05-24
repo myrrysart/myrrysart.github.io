@@ -1,14 +1,19 @@
+/* ── Aggressively Dark Terminal Theme ── */
+
 body {
-	font-family: Arial, sans-serif;
+	font-family: "Courier New", Courier, "Liberation Mono", monospace;
 	margin: 0;
-	background: linear-gradient(to bottom, #c0c0c0, #2e2a2a);
-	color: #111;
+	background: #000;
+	color: #c8d0c0;
+	font-size: 19px;
+	line-height: 1.6;
 }
 
 header {
-	background-color: #333;
-	color: #fff;
+	background-color: #0a0a0a;
+	color: #e0e8d8;
 	padding: 20px;
+	border-bottom: 1px solid #1a1a1a;
 }
 
 nav ul {
@@ -21,20 +26,23 @@ nav ul {
 
 nav a {
 	display: block;
-	padding: 10px;
-	color: #fff;
+	padding: 10px 14px;
+	color: #c8d0c0;
 	text-decoration: none;
-	background-color: #333;
-	border-radius: 3px;
+	background-color: transparent;
+	border-radius: 0;
+	transition: color 0.15s;
 }
 
 nav a:hover {
-	background-color: #555;
+	color: #00e676;
+	background-color: transparent;
 }
-
 
 section {
 	padding: 20px;
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 section#about,
@@ -44,15 +52,41 @@ section#contact {
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 28px;
 	margin-top: 0;
+	margin-bottom: 16px;
 	width: 100%;
+	color: #e0e8d8;
+	font-weight: normal;
+	letter-spacing: 0.02em;
 }
 
 h3 {
-	font-size: 24px;
-	margin-bottom: 0;
+	font-size: 22px;
+	margin-bottom: 4px;
 	width: 100%;
+	color: #e0e8d8;
+	font-weight: normal;
+}
+
+h4 {
+	color: #5a6a5a;
+	font-weight: normal;
+	font-size: 13px;
+	margin: 0 0 2px 0;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+a {
+	color: #00e676;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	transition: color 0.15s;
+}
+
+a:hover {
+	color: #69f0ae;
 }
 
 .artwork-grid {
@@ -76,6 +110,13 @@ h3 {
 	max-width: 400px;
 	width: 100%;
 	height: auto;
+	border: 1px solid #1a1a1a;
+	border-radius: 0;
+	transition: border-color 0.15s;
+}
+
+.artwork-grid img:hover {
+	border-color: #00e676;
 }
 
 section#projects .projects-grid {
@@ -86,6 +127,13 @@ section#projects .projects-grid {
 
 section#projects .project-card {
 	break-inside: avoid;
+	padding: 16px;
+	border: 1px solid #1a1a1a;
+	border-radius: 0;
+}
+
+section#projects .project-card:hover {
+	border-color: #2a2a2a;
 }
 
 section#projects p {
@@ -93,7 +141,7 @@ section#projects p {
 }
 
 section#projects a {
-	color: #117;
+	color: #00e676;
 }
 
 @media only screen and (max-width: 768px) {
@@ -119,24 +167,30 @@ section .contact {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	font-size: 36px;
-	color: #fff;
-	background-color: #333;
+	font-size: 24px;
+	color: #c8d0c0;
+	background-color: #0a0a0a;
 	width: 40px;
 	height: 40px;
-	border-radius: 50%;
+	border-radius: 0;
+	border: 1px solid #1a1a1a;
 	text-align: center;
 	line-height: 40px;
 	z-index: 9999;
 	text-decoration: none;
+	font-family: "Courier New", Courier, monospace;
+	transition: color 0.15s, border-color 0.15s;
 }
 
 #back-to-top:hover {
-	background-color: #555;
+	color: #00e676;
+	border-color: #00e676;
+	background-color: #000;
 }
 
 #back-to-top:active {
-	background-color: #777;
+	color: #69f0ae;
+	border-color: #69f0ae;
 }
 
 @media only screen and (max-width: 768px) {
@@ -161,27 +215,41 @@ section#projects ul.project-gallery {
 }
 
 section#projects ul.project-gallery li {
-	width: 260px;
+	width: 100%;
 }
 
 section#projects ul.project-gallery img {
-	max-width: 260px;
+	width: 100%;
 	height: auto;
-	border-radius: 4px;
+	border: 1px solid #1a1a1a;
+	border-radius: 0;
+}
+
+section#projects ul.project-gallery img:hover {
+	border-color: #00e676;
 }
 
 section#projects .project-tech {
 	font-size: 0.85em;
-	color: #444;
+	color: #5a6a5a;
 	margin: 6px 0;
 }
 
 section#projects ul.project-highlights {
-	list-style: disc;
-	padding-left: 20px;
+	list-style: none;
+	padding-left: 0;
 	margin: 6px 0;
 }
 
 section#projects ul.project-highlights li {
 	margin: 3px 0;
+	padding-left: 16px;
+	position: relative;
+}
+
+section#projects ul.project-highlights li::before {
+	content: ">";
+	position: absolute;
+	left: 0;
+	color: #00e676;
 }

@@ -1,4 +1,3 @@
-images/unused/
-outputs/resume_for_nokia.pdf
-outputs/resume_for_nokia.typ
 *.swp
+.DS_Store
+Thumbs.db
