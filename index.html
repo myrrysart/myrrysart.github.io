@@ -21,59 +21,23 @@
     <section id="about">
       <h2>About</h2>
       <p>I do art and code.</p>
-      <p>Currently studying in Hive Helsinki.</p>
+      <p>Studied art in Repin Instituutti in Kotka.</p>
+      <p>Currently studying programming in Hive Helsinki.</p>
     </section>
     <section id="projects">
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <h3>Single-threaded Ray-Tracer Engine (miniRT)</h3>
-          <p>Developed a functional 3D renderer in C using math primitives, following the ray-tracer challenge book</p>
-          <p><a href="https://github.com/myrrysart/miniRT">GitHub</a></p>
-          <ul class="project-gallery">
-            <li>
-              <p><a href="images/full/miniRT_raytracer_screenshot.png" target="_blank"><img src="images/thumb/miniRT_raytracer_screenshot.png" alt="Raytracer render"></a></p>
-              <p>Raytracer screenshot.</p>
-            </li>
-          </ul>
-        </div>
-        <div class="project-card">
-          <h3>Single-threaded Fractal Explorer (fractol)</h3>
-          <p>Built a single-threaded interactive fractal renderer/explorer with realtime zooming and navigation.</p>
-          <p><a href="https://github.com/myrrysart/fractol">GitHub</a></p>
-          <ul class="project-gallery">
-            <li>
-              <p><a href="images/full/fractol_julia_set.png" target="_blank"><img src="images/thumb/fractol_julia_set.png" alt="Julia set"></a></p>
-              <p>Julia set screenshot.</p>
-            </li>
-          </ul>
-        </div>
-        <div class="project-card">
-          <h3>Unix System Infrastructure Shell (mnshell)</h3>
-          <p>Recreated a minimalist POSIX-compatible system command interpreter to build a deep structural understanding of OS architecture.</p>
-          <p><a href="https://github.com/myrrysart/mnshell">GitHub</a></p>
-          <ul class="project-gallery">
-            <li>
-              <p><a href="images/full/mnshell_screenshot.png" target="_blank"><img src="images/thumb/mnshell_screenshot.png" alt="Unix shell"></a></p>
-              <p>Shell screenshot.</p>
-            </li>
-          </ul>
-        </div>
-        <div class="project-card">
-          <h3>Persistent Vim File Bookmarks (stick.vim)</h3>
-          <p>A Vim plugin for quick file bookmarks with a popup menu and persistence across sessions.</p>
-          <p><a href="https://github.com/myrrysart/stick.vim">GitHub</a></p>
-          <ul class="project-gallery">
-            <li>
-              <p><a href="images/full/stick_vim_screenshot.png" target="_blank"><img src="images/thumb/stick_vim_screenshot.png" alt="Stick.vim bookmarks"></a></p>
-              <p>Stick.vim plugin screenshot.</p>
-            </li>
-          </ul>
-        </div>
-        <div class="project-card">
+          <h4>Personal Project</h4>
           <h3>Embedded 12-Key Chorded Keyboard</h3>
-          <p>Designed and built a custom, hardware-minimalist mechanical keyboard from scratch using a Pico 2W.</p>
-          <p><a href="https://github.com/myrrysart/chorded-keyboard">GitHub</a></p>
+          <p>Neat 12 key keyboard I build. Chording, combos, layers, what have you.</p>
+          <p><a href></a></p>
+          <p class="project-tech">Tech: C, Pico SDK, Embedded Systems</p>
+          <ul class="project-highlights">
+            <li>Wrote the entire firmware in C using the Pico SDK</li>
+            <li>Abstracted a full keyboard layout and mouse control into 12 physical inputs</li>
+            <li>Implemented customized chording, layering, and combo logic</li>
+          </ul>
           <ul class="project-gallery">
             <li>
               <p><a href="images/full/peal_keyboardv01.webp" target="_blank"><img src="images/thumb/peal_keyboardv01.webp" alt="Peal keyboard v01"></a></p>
@@ -85,40 +49,98 @@
             </li>
           </ul>
         </div>
+        <div class="project-card">
+          <h4>Hive Helsinki, solo project</h4>
+          <h3>Single-threaded Fractal Explorer (fractol)</h3>
+          <p>Fractals are amazing, and once I have more time, I'll go back and make this with c++ and multithreaded.</p>
+          <p><a href="https://github.com/myrrysart/fractol">GitHub</a></p>
+          <p class="project-tech">Tech: C, Raylib, WebAssembly</p>
+          <ul class="project-highlights">
+            <li>Implemented Mandelbrot and Julia set rendering with zoom/pan controls</li>
+            <li>both native and browser builds (WASM) for easy sharing</li>
+          </ul>
+          <ul class="project-gallery">
+            <li>
+              <p><a href="images/full/fractol_julia_set.png" target="_blank"><img src="images/thumb/fractol_julia_set.png" alt="Julia set"></a></p>
+              <p>Julia set screenshot.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h4>Hive Helsinki, group project</h4>
+          <h3>Single-threaded Ray-Tracer Engine (miniRT)</h3>
+          <p>Another really, really fun thing that I would love to go back to and recreate in c++ and multithreaded.</p>
+          <p><a href="https://github.com/myrrysart/miniRT">GitHub</a></p>
+          <p class="project-tech">Tech: C, Vector Math, Fatstructs</p>
+          <ul class="project-highlights">
+            <li>Worked with <a href="https://github.com/mbmb-mbmb">Markus</a></li>
+            <li>Everything was on the stack — no heap allocations</li>
+            <li>Optimized the rendering loop to be as fast as possible</li>
+          </ul>
+          <ul class="project-gallery">
+            <li>
+              <p><a href="images/full/miniRT_raytracer_screenshot.png" target="_blank"><img src="images/thumb/miniRT_raytracer_screenshot.png" alt="Raytracer render"></a></p>
+              <p>Raytracer screenshot.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h4>Hive Helsinki, group project</h4>
+          <h3>MiniShell</h3>
+          <p>This was such a good project, I enjoyed it immensely. One of those 'I'd love to go back and work on it more once I have more time' projects.</p>
+          <p><a href="https://github.com/myrrysart/mnshell">GitHub</a></p>
+          <p class="project-tech">Tech: C, POSIX, Arena Allocation</p>
+          <ul class="project-highlights">
+            <li>Worked with <a href="https://github.com/hieutrpham">Hieu</a></li>
+            <li>Used arena allocation and fat structs</li>
+          </ul>
+          <ul class="project-gallery">
+            <li>
+              <p><a href="images/full/mnshell_screenshot.png" target="_blank"><img src="images/thumb/mnshell_screenshot.png" alt="Unix shell"></a></p>
+              <p>Shell screenshot.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h4>Personal Project</h4>
+          <h3>Persistent Vim File Bookmarks (stick.vim)</h3>
+          <p>Telescope is cool, but for neovim only. So this is a copy of that idea.</p>
+          <p><a href></a></p>
+          <p class="project-tech">Tech: Vimscript</p>
+          <ul class="project-highlights">
+            <li>Quick bookmarks 1-4 with single keystrokes</li>
+            <li>Popup UI to browse, delete, and reorder bookmarks</li>
+            <li>Persists bookmarks in a .stick file in project root (or .git/)</li>
+          </ul>
+          <ul class="project-gallery">
+            <li>
+              <p><a href="images/full/stick_vim_screenshot.png" target="_blank"><img src="images/thumb/stick_vim_screenshot.png" alt="Stick.vim bookmarks"></a></p>
+              <p>Stick.vim plugin screenshot.</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section id="analog">
       <h2>Analog</h2>
       <div class="artwork-grid">
         <li>
-          <p><a href="images/full/oil_squeezeSipAndGrindFramed.jpg" target="_blank"><img src="images/thumb/oil_squeezeSipAndGrindFramed.jpg" alt="Squeeze, Sip, and Grind"></a></p>
-          <p>Oil on canvas.</p>
-        </li>
-        <li>
           <p><a href="images/full/analog_anatomyStudy.jpeg" target="_blank"><img src="images/thumb/analog_anatomyStudy.jpeg" alt="Anatomy Study"></a></p>
-          <p>Pencil on paper.</p>
+          <p>Anatomy study of a leg.</p>
         </li>
         <li>
           <p><a href="images/full/analog_headstudies.jpg" target="_blank"><img src="images/thumb/analog_headstudies.jpg" alt="Head Studies"></a></p>
-          <p>Ink and markers on paper.</p>
+          <p>small ink doodles.</p>
+        </li>
+        <li>
+          <p><a href="images/full/oil_squeezeSipAndGrindFramed.jpg" target="_blank"><img src="images/thumb/oil_squeezeSipAndGrindFramed.jpg" alt="Squeeze, Sip, and Grind"></a></p>
+          <p>Composition study.</p>
         </li>
       </div>
     </section>
     <section id="digital">
       <h2>Digital</h2>
       <div class="artwork-grid">
-        <li>
-          <p><a href="images/full/digital_starvingSaint.png" target="_blank"><img src="images/thumb/digital_starvingSaint.png" alt="Starving Saint"></a></p>
-          <p>Art for a book by Juho Pohjalainen.</p>
-        </li>
-        <li>
-          <p><a href="images/full/digital_stoicAndStonefaced.png" target="_blank"><img src="images/thumb/digital_stoicAndStonefaced.png" alt="Stoic and Stonefaced"></a></p>
-          <p></p>
-        </li>
-        <li>
-          <p><a href="images/full/digital_uniVsMia.png" target="_blank"><img src="images/thumb/digital_uniVsMia.png" alt="Uni vs Miä"></a></p>
-          <p>Poster art for a short film.</p>
-        </li>
         <li>
           <p><a href="images/full/digital_noita.png" target="_blank"><img src="images/thumb/digital_noita.png" alt="Noita"></a></p>
           <p>A little doodle for floppy hat</p>
@@ -131,11 +153,31 @@
           <p><a href="images/full/digital_skeletonAxesQuestions.jpg" target="_blank"><img src="images/thumb/digital_skeletonAxesQuestions.jpg" alt="Skeleton Axes Questions"></a></p>
           <p></p>
         </li>
+        <li>
+          <p><a href="images/full/digital_starvingSaint.png" target="_blank"><img src="images/thumb/digital_starvingSaint.png" alt="Starving Saint"></a></p>
+          <p>Art for a book by Juho Pohjalainen.</p>
+        </li>
+        <li>
+          <p><a href="images/full/digital_stoicAndStonefaced.png" target="_blank"><img src="images/thumb/digital_stoicAndStonefaced.png" alt="Stoic and Stonefaced"></a></p>
+          <p></p>
+        </li>
+        <li>
+          <p><a href="images/full/digital_uniVsMia.png" target="_blank"><img src="images/thumb/digital_uniVsMia.png" alt="Uni vs Miä"></a></p>
+          <p>Poster art for a short film.</p>
+        </li>
       </div>
     </section>
     <section id="photography">
       <h2>Photography</h2>
       <div class="artwork-grid">
+        <li>
+          <p><a href="images/full/photo_streetsOfHelsinki.jpg" target="_blank"><img src="images/thumb/photo_streetsOfHelsinki.jpg" alt="Streets of Helsinki 1"></a></p>
+          <p>Helsinki.</p>
+        </li>
+        <li>
+          <p><a href="images/full/photo_streetsOfHelsinki2.jpg" target="_blank"><img src="images/thumb/photo_streetsOfHelsinki2.jpg" alt="Streets of Helsinki 2"></a></p>
+          <p>Helsinki.</p>
+        </li>
         <li>
           <p><a href="images/full/photo_streetsOfKotka.jpg" target="_blank"><img src="images/thumb/photo_streetsOfKotka.jpg" alt="Streets of Kotka 1"></a></p>
           <p>Kotka streets.</p>
@@ -147,14 +189,6 @@
         <li>
           <p><a href="images/full/photo_streetsOfKotka3.jpg" target="_blank"><img src="images/thumb/photo_streetsOfKotka3.jpg" alt="Streets of Kotka 3"></a></p>
           <p>And more Kotka streets.</p>
-        </li>
-        <li>
-          <p><a href="images/full/photo_streetsOfHelsinki.jpg" target="_blank"><img src="images/thumb/photo_streetsOfHelsinki.jpg" alt="Streets of Helsinki 1"></a></p>
-          <p>Helsinki.</p>
-        </li>
-        <li>
-          <p><a href="images/full/photo_streetsOfHelsinki2.jpg" target="_blank"><img src="images/thumb/photo_streetsOfHelsinki2.jpg" alt="Streets of Helsinki 2"></a></p>
-          <p>Helsinki.</p>
         </li>
       </div>
     </section>

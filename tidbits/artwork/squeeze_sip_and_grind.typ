@@ -3,5 +3,5 @@
   category: "analog",
   medium: "Oil on canvas",
   file: "oil_squeezeSipAndGrindFramed.jpg",
-  description: "Real life composition study.",
+  description: "Composition study.",
 )

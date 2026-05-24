@@ -1,11 +1,12 @@
 #let project = (
   name: "Single-threaded Ray-Tracer Engine (miniRT)",
-  role: "Hive Helsinki",
+  role: "Hive Helsinki, group project",
   dates: "2026",
   tech: ("C", "Vector Math", "Fatstructs"),
-  summary: "Developed a functional 3D renderer in C using math primitives, following the ray-tracer challenge book",
+  cv: "Developed a functional 3D renderer in C using math primitives, following the ray-tracer challenge book",
+  summary: "Another really, really fun thing that I would love to go back to and recreate in c++ and multithreaded.",
   highlights: (
-    "Working with Markus",
+    [Worked with #html.elem("a", attrs: (href: "https://github.com/mbmb-mbmb"), "Markus")],
     "Everything was on the stack — no heap allocations",
     "Optimized the rendering loop to be as fast as possible",
   ),

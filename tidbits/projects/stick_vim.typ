@@ -2,8 +2,9 @@
   name: "Persistent Vim File Bookmarks (stick.vim)",
   role: "Personal Project",
   dates: "2026",
-  tech: ("Vimscript"),
-  summary: "A Vim plugin for quick file bookmarks with a popup menu and persistence across sessions.",
+  tech: ("Vimscript",),
+  cv: "A Vim plugin for quick file bookmarks with a popup menu and persistence across sessions.",
+  summary: "Telescope is cool, but for neovim only. So this is a copy of that idea.",
   highlights: (
     "Quick bookmarks 1-4 with single keystrokes",
     "Popup UI to browse, delete, and reorder bookmarks",
@@ -16,5 +17,5 @@
       description: "Stick.vim plugin screenshot.",
     ),
   ),
-  links: (("GitHub", "https://github.com/myrrysart/stick.vim"),),
+  links: (("", ""),),
 )

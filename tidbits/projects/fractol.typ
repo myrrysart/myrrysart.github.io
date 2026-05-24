@@ -1,9 +1,10 @@
 #let project = (
   name: "Single-threaded Fractal Explorer (fractol)",
-  role: "Hive Helsinki",
+  role: "Hive Helsinki, solo project",
   dates: "2025",
   tech: ("C", "Raylib", "WebAssembly"),
-  summary: "Built a single-threaded interactive fractal renderer/explorer with realtime zooming and navigation.",
+  cv: "Built a single-threaded interactive fractal renderer/explorer with realtime zooming and navigation.",
+  summary: "Fractals are amazing, and once I have more time, I'll go back and make this with c++ and multithreaded.",
   highlights: (
     "Implemented Mandelbrot and Julia set rendering with zoom/pan controls",
     "both native and browser builds (WASM) for easy sharing",

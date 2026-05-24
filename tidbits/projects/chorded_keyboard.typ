@@ -3,7 +3,8 @@
   role: "Personal Project",
   dates: "2026",
   tech: ("C", "Pico SDK", "Embedded Systems"),
-  summary: "Designed and built a custom, hardware-minimalist mechanical keyboard from scratch using a Pico 2W.",
+  cv: "Designed and built a custom, hardware-minimalist mechanical keyboard from scratch using a Pico 2W.",
+  summary: "Neat 12 key keyboard I build. Chording, combos, layers, what have you.",
   highlights: (
     "Wrote the entire firmware in C using the Pico SDK",
     "Abstracted a full keyboard layout and mouse control into 12 physical inputs",
@@ -21,5 +22,5 @@
       description: "Prototype v01 (back).",
     ),
   ),
-  links: (("GitHub", "https://github.com/myrrysart/chorded-keyboard"),),
+  links: (("", ""),),
 )
