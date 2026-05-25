@@ -81,8 +81,8 @@ h3 {
 	font-weight: normal;
 }
 
-h4 {
-	color: #5a6a5a;
+.project-label {
+	color: #7a8a7a;
 	font-weight: normal;
 	font-size: 13px;
 	margin: 0 0 2px 0;
@@ -243,7 +243,7 @@ section#projects ul.project-gallery img:hover {
 
 section#projects .project-tech {
 	font-size: 0.85em;
-	color: #5a6a5a;
+	color: #7a8a7a;
 	margin: 6px 0;
 }
 

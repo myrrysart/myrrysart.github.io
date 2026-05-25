@@ -1,0 +1,13 @@
+# Cache images and CSS aggressively — they never change
+/images/*
+  Cache-Control: max-age=31536000, immutable
+/style.css
+  Cache-Control: max-age=31536000, immutable
+
+# HTML: short cache so updates propagate quickly
+/*.html
+  Cache-Control: max-age=600
+
+# Default for everything else
+/*
+  Cache-Control: max-age=600

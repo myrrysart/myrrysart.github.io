@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>myrrys.art — art & code portfolio</title>
+    <meta name="description" content="Personal portfolio of art and code by myrrys — analog and digital art, photography, programming projects and embedded systems.">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <link rel="stylesheet" href="style.css">
     <header>
       <nav>
         <ul class="nav-links">
@@ -29,10 +31,9 @@
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <h4>Personal Project</h4>
           <h3>Embedded 12-Key Chorded Keyboard</h3>
+          <p class="project-label">Personal Project</p>
           <p>Neat 12 key keyboard I build. Chording, combos, layers, what have you.</p>
-          <p><a href></a></p>
           <p class="project-tech">Tech: C, Pico SDK, Embedded Systems</p>
           <ul class="project-highlights">
             <li>Wrote the entire firmware in C using the Pico SDK</li>
@@ -41,18 +42,18 @@
           </ul>
           <ul class="project-gallery">
             <li>
-              <p><a href="images/full/peal_keyboardv01.webp" target="_blank"><img src="images/thumb/peal_keyboardv01.webp" alt="Peal keyboard v01"></a></p>
+              <p><a href="images/full/peal_keyboardv01.webp" target="_blank"><img src="images/thumb/peal_keyboardv01.webp" alt="Peal keyboard v01" loading="lazy" width="601" height="601"></a></p>
               <p>Prototype v01 (front).</p>
             </li>
             <li>
-              <p><a href="images/full/peal_keyboardv01_back.webp" target="_blank"><img src="images/thumb/peal_keyboardv01_back.webp" alt="Peal keyboard v01 back"></a></p>
+              <p><a href="images/full/peal_keyboardv01_back.webp" target="_blank"><img src="images/thumb/peal_keyboardv01_back.webp" alt="Peal keyboard v01 back" loading="lazy" width="601" height="601"></a></p>
               <p>Prototype v01 (back).</p>
             </li>
           </ul>
         </div>
         <div class="project-card">
-          <h4>Hive Helsinki, solo project</h4>
           <h3>Single-threaded Fractal Explorer (fractol)</h3>
+          <p class="project-label">Hive Helsinki, solo project</p>
           <p>Fractals are amazing, and once I have more time, I'll go back and make this with c++ and multithreading.</p>
           <p><a href="https://myrrysart.itch.io/fractol?secret=zcftixBjcFoke8v3ykpDoH104">itch.io</a></p>
           <p class="project-tech">Tech: C, Raylib, WebAssembly</p>
@@ -62,14 +63,14 @@
           </ul>
           <ul class="project-gallery">
             <li>
-              <p><a href="images/full/fractol_julia_set.png" target="_blank"><img src="images/thumb/fractol_julia_set.png" alt="Julia set"></a></p>
+              <p><a href="images/full/fractol_julia_set.png" target="_blank"><img src="images/thumb/fractol_julia_set.webp" alt="Julia set" loading="lazy" width="536" height="530"></a></p>
               <p>Julia set screenshot.</p>
             </li>
           </ul>
         </div>
         <div class="project-card">
-          <h4>Hive Helsinki, group project</h4>
           <h3>Single-threaded Ray-Tracer Engine (miniRT)</h3>
+          <p class="project-label">Hive Helsinki, group project</p>
           <p>Another really, really fun thing that I would love to go back to and recreate in c++ and multithreaded.</p>
           <p><a href="https://github.com/mbmb-mbmb/MiniRT">GitHub</a></p>
           <p class="project-tech">Tech: C, Vector Math, Fatstructs</p>
@@ -80,14 +81,14 @@
           </ul>
           <ul class="project-gallery">
             <li>
-              <p><a href="images/full/miniRT_raytracer_screenshot.png" target="_blank"><img src="images/thumb/miniRT_raytracer_screenshot.png" alt="Raytracer render"></a></p>
+              <p><a href="images/full/miniRT_raytracer_screenshot.png" target="_blank"><img src="images/thumb/miniRT_raytracer_screenshot.webp" alt="Raytracer render" loading="lazy" width="800" height="514"></a></p>
               <p>Raytracer screenshot.</p>
             </li>
           </ul>
         </div>
         <div class="project-card">
-          <h4>Hive Helsinki, group project</h4>
           <h3>MiniShell</h3>
+          <p class="project-label">Hive Helsinki, group project</p>
           <p>This was such a good project, I enjoyed it immensely. One of those 'I'd love to go back and work on it more once I have more time' projects.</p>
           <p><a href="https://github.com/myrrysart/mnshell">GitHub</a></p>
           <p class="project-tech">Tech: C, POSIX, Arena Allocation</p>
@@ -97,16 +98,15 @@
           </ul>
           <ul class="project-gallery">
             <li>
-              <p><a href="images/full/mnshell_screenshot.png" target="_blank"><img src="images/thumb/mnshell_screenshot.png" alt="Unix shell"></a></p>
+              <p><a href="images/full/mnshell_screenshot.png" target="_blank"><img src="images/thumb/mnshell_screenshot.webp" alt="Unix shell" loading="lazy" width="800" height="278"></a></p>
               <p>Shell screenshot.</p>
             </li>
           </ul>
         </div>
         <div class="project-card">
-          <h4>Personal Project</h4>
           <h3>Persistent Vim File Bookmarks (stick.vim)</h3>
+          <p class="project-label">Personal Project</p>
           <p>Telescope is cool, but for neovim only. So this is a copy of that idea.</p>
-          <p><a href></a></p>
           <p class="project-tech">Tech: Vimscript</p>
           <ul class="project-highlights">
             <li>Quick bookmarks 1-4 with single keystrokes</li>
@@ -115,7 +115,7 @@
           </ul>
           <ul class="project-gallery">
             <li>
-              <p><a href="images/full/stick_vim_screenshot.png" target="_blank"><img src="images/thumb/stick_vim_screenshot.png" alt="Stick.vim bookmarks"></a></p>
+              <p><a href="images/full/stick_vim_screenshot.png" target="_blank"><img src="images/thumb/stick_vim_screenshot.webp" alt="Stick.vim bookmarks" loading="lazy" width="800" height="828"></a></p>
               <p>Stick.vim plugin screenshot.</p>
             </li>
           </ul>
@@ -124,194 +124,194 @@
     </section>
     <section id="analog">
       <h2>Analog</h2>
-      <div class="artwork-grid">
+      <ul class="artwork-grid">
         <li>
-          <p><a href="images/full/analog_anatomyStudy.jpeg" target="_blank"><img src="images/thumb/analog_anatomyStudy.jpeg" alt="Anatomy Study"></a></p>
+          <p><a href="images/full/analog_anatomyStudy.jpeg" target="_blank"><img src="images/thumb/analog_anatomyStudy.webp" alt="Anatomy Study" loading="lazy" width="800" height="1102"></a></p>
           <p>Anatomy study of a leg.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_blockhead.jpg" target="_blank"><img src="images/thumb/digital_blockhead.jpg" alt="Blockhead"></a></p>
+          <p><a href="images/full/digital_blockhead.jpg" target="_blank"><img src="images/thumb/digital_blockhead.webp" alt="Blockhead" loading="lazy" width="800" height="1066"></a></p>
           <p>Head study.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_christmasDoodle.jpg" target="_blank"><img src="images/thumb/digital_christmasDoodle.jpg" alt="Christmas Doodle"></a></p>
+          <p><a href="images/full/digital_christmasDoodle.jpg" target="_blank"><img src="images/thumb/digital_christmasDoodle.webp" alt="Christmas Doodle" loading="lazy" width="800" height="1066"></a></p>
           <p>Holiday doodle.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_chromeHead.jpeg" target="_blank"><img src="images/thumb/digital_chromeHead.jpeg" alt="Chrome Head"></a></p>
+          <p><a href="images/full/digital_chromeHead.jpeg" target="_blank"><img src="images/thumb/digital_chromeHead.webp" alt="Chrome Head" loading="lazy" width="800" height="930"></a></p>
           <p>Character portrait.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_compositionStudies.jpg" target="_blank"><img src="images/thumb/analog_compositionStudies.jpg" alt="Composition Studies"></a></p>
+          <p><a href="images/full/analog_compositionStudies.jpg" target="_blank"><img src="images/thumb/analog_compositionStudies.webp" alt="Composition Studies" loading="lazy" width="800" height="1066"></a></p>
           <p>Composition study sketches.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_croquis.jpg" target="_blank"><img src="images/thumb/analog_croquis.jpg" alt="Croquis"></a></p>
+          <p><a href="images/full/analog_croquis.jpg" target="_blank"><img src="images/thumb/analog_croquis.webp" alt="Croquis" loading="lazy" width="800" height="1066"></a></p>
           <p>Quick figure sketch.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_croquis2.jpg" target="_blank"><img src="images/thumb/analog_croquis2.jpg" alt="Croquis 2"></a></p>
+          <p><a href="images/full/analog_croquis2.jpg" target="_blank"><img src="images/thumb/analog_croquis2.webp" alt="Croquis 2" loading="lazy" width="800" height="1066"></a></p>
           <p>Quick figure sketch.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_footStudy.jpg" target="_blank"><img src="images/thumb/analog_footStudy.jpg" alt="Foot Study"></a></p>
+          <p><a href="images/full/analog_footStudy.jpg" target="_blank"><img src="images/thumb/analog_footStudy.webp" alt="Foot Study" loading="lazy" width="800" height="600"></a></p>
           <p>Anatomy study of a foot.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_frierenDoodle.png" target="_blank"><img src="images/thumb/digital_frierenDoodle.png" alt="Frieren Angle Doodle"></a></p>
+          <p><a href="images/full/digital_frierenDoodle.png" target="_blank"><img src="images/thumb/digital_frierenDoodle.webp" alt="Frieren Angle Doodle" loading="lazy" width="800" height="800"></a></p>
           <p>Doodle of Frieren.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_goatSkull.jpg" target="_blank"><img src="images/thumb/analog_goatSkull.jpg" alt="Goat Skull"></a></p>
+          <p><a href="images/full/analog_goatSkull.jpg" target="_blank"><img src="images/thumb/analog_goatSkull.webp" alt="Goat Skull" loading="lazy" width="800" height="1066"></a></p>
           <p>Skull study.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_headstudies.jpg" target="_blank"><img src="images/thumb/analog_headstudies.jpg" alt="Head Studies"></a></p>
+          <p><a href="images/full/analog_headstudies.jpg" target="_blank"><img src="images/thumb/analog_headstudies.webp" alt="Head Studies" loading="lazy" width="800" height="470"></a></p>
           <p>small ink doodles.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_huuuuuu.jpg" target="_blank"><img src="images/thumb/analog_huuuuuu.jpg" alt="Huuuuuu"></a></p>
+          <p><a href="images/full/analog_huuuuuu.jpg" target="_blank"><img src="images/thumb/analog_huuuuuu.webp" alt="Huuuuuu" loading="lazy" width="800" height="1066"></a></p>
           <p>Ink sketch.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_inkSketch.jpg" target="_blank"><img src="images/thumb/analog_inkSketch.jpg" alt="Ink Sketch"></a></p>
+          <p><a href="images/full/analog_inkSketch.jpg" target="_blank"><img src="images/thumb/analog_inkSketch.webp" alt="Ink Sketch" loading="lazy" width="800" height="1066"></a></p>
           <p>Ink drawing.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_inkSketch3.jpg" target="_blank"><img src="images/thumb/analog_inkSketch3.jpg" alt="Ink Sketch 3"></a></p>
+          <p><a href="images/full/analog_inkSketch3.jpg" target="_blank"><img src="images/thumb/analog_inkSketch3.webp" alt="Ink Sketch 3" loading="lazy" width="800" height="1066"></a></p>
           <p>Ink drawing.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_inkSketch4.jpg" target="_blank"><img src="images/thumb/analog_inkSketch4.jpg" alt="Ink Sketch 4"></a></p>
+          <p><a href="images/full/analog_inkSketch4.jpg" target="_blank"><img src="images/thumb/analog_inkSketch4.webp" alt="Ink Sketch 4" loading="lazy" width="800" height="1066"></a></p>
           <p>Ink drawing.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_memoryList.jpg" target="_blank"><img src="images/thumb/analog_memoryList.jpg" alt="Memory List"></a></p>
+          <p><a href="images/full/analog_memoryList.jpg" target="_blank"><img src="images/thumb/analog_memoryList.webp" alt="Memory List" loading="lazy" width="800" height="600"></a></p>
           <p>Sketch on a list.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_reliefi1.jpg" target="_blank"><img src="images/thumb/analog_reliefi1.jpg" alt="Reliefi 1"></a></p>
+          <p><a href="images/full/analog_reliefi1.jpg" target="_blank"><img src="images/thumb/analog_reliefi1.webp" alt="Reliefi 1" loading="lazy" width="800" height="450"></a></p>
           <p>Relief.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_reliefi2.jpg" target="_blank"><img src="images/thumb/analog_reliefi2.jpg" alt="Reliefi 2"></a></p>
+          <p><a href="images/full/analog_reliefi2.jpg" target="_blank"><img src="images/thumb/analog_reliefi2.webp" alt="Reliefi 2" loading="lazy" width="800" height="1422"></a></p>
           <p>Relief.</p>
         </li>
         <li>
-          <p><a href="images/full/analog_sketchOfReliefi.jpg" target="_blank"><img src="images/thumb/analog_sketchOfReliefi.jpg" alt="Sketch of Reliefi"></a></p>
+          <p><a href="images/full/analog_sketchOfReliefi.jpg" target="_blank"><img src="images/thumb/analog_sketchOfReliefi.webp" alt="Sketch of Reliefi" loading="lazy" width="800" height="1066"></a></p>
           <p>sketch of a relief.</p>
         </li>
         <li>
-          <p><a href="images/full/oil_squeezeSipAndGrindFramed.jpg" target="_blank"><img src="images/thumb/oil_squeezeSipAndGrindFramed.jpg" alt="Squeeze, Sip, and Grind"></a></p>
+          <p><a href="images/full/oil_squeezeSipAndGrindFramed.jpg" target="_blank"><img src="images/thumb/oil_squeezeSipAndGrindFramed.webp" alt="Squeeze, Sip, and Grind" loading="lazy" width="800" height="600"></a></p>
           <p>Composition study.</p>
         </li>
-      </div>
+      </ul>
     </section>
     <section id="digital">
       <h2>Digital</h2>
-      <div class="artwork-grid">
+      <ul class="artwork-grid">
         <li>
-          <p><a href="images/full/digital_elf.png" target="_blank"><img src="images/thumb/digital_elf.png" alt="Digi Elf"></a></p>
+          <p><a href="images/full/digital_elf.png" target="_blank"><img src="images/thumb/digital_elf.webp" alt="Digi Elf" loading="lazy" width="627" height="622"></a></p>
           <p>Elf character sketch.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_selfPortrait.png" target="_blank"><img src="images/thumb/digital_selfPortrait.png" alt="Digi Self Portrait"></a></p>
+          <p><a href="images/full/digital_selfPortrait.png" target="_blank"><img src="images/thumb/digital_selfPortrait.webp" alt="Digi Self Portrait" loading="lazy" width="669" height="690"></a></p>
           <p>Digital self portrait.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_knight.png" target="_blank"><img src="images/thumb/digital_knight.png" alt="Knight"></a></p>
+          <p><a href="images/full/digital_knight.png" target="_blank"><img src="images/thumb/digital_knight.webp" alt="Knight" loading="lazy" width="684" height="738"></a></p>
           <p>Knight character art.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_noita.png" target="_blank"><img src="images/thumb/digital_noita.png" alt="Noita"></a></p>
+          <p><a href="images/full/digital_noita.png" target="_blank"><img src="images/thumb/digital_noita.webp" alt="Noita" loading="lazy" width="512" height="322"></a></p>
           <p>A little doodle for floppy hat</p>
         </li>
         <li>
-          <p><a href="images/full/digital_pixelart.png" target="_blank"><img src="images/thumb/digital_pixelart.png" alt="Pixel Art"></a></p>
+          <p><a href="images/full/digital_pixelart.png" target="_blank"><img src="images/thumb/digital_pixelart.webp" alt="Pixel Art" loading="lazy" width="168" height="168"></a></p>
           <p>Pixel art piece.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_pixelart2.png" target="_blank"><img src="images/thumb/digital_pixelart2.png" alt="Pixel Art 2"></a></p>
+          <p><a href="images/full/digital_pixelart2.png" target="_blank"><img src="images/thumb/digital_pixelart2.webp" alt="Pixel Art 2" loading="lazy" width="128" height="128"></a></p>
           <p>Pixel art piece.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_pixelart3.png" target="_blank"><img src="images/thumb/digital_pixelart3.png" alt="Pixel Art 3"></a></p>
+          <p><a href="images/full/digital_pixelart3.png" target="_blank"><img src="images/thumb/digital_pixelart3.webp" alt="Pixel Art 3" loading="lazy" width="192" height="192"></a></p>
           <p>Pixel art piece.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_pixelart4.png" target="_blank"><img src="images/thumb/digital_pixelart4.png" alt="Pixel Art 4"></a></p>
+          <p><a href="images/full/digital_pixelart4.png" target="_blank"><img src="images/thumb/digital_pixelart4.webp" alt="Pixel Art 4" loading="lazy" width="128" height="128"></a></p>
           <p>Pixel art piece.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_praedorMonster.png" target="_blank"><img src="images/thumb/digital_praedorMonster.png" alt="Praedor Monster"></a></p>
+          <p><a href="images/full/digital_praedorMonster.png" target="_blank"><img src="images/thumb/digital_praedorMonster.webp" alt="Praedor Monster" loading="lazy" width="768" height="432"></a></p>
           <p>Fan art of a monster for the Finnish TTRPG Praedor</p>
         </li>
         <li>
-          <p><a href="images/full/digital_skeletonAxesQuestions.jpg" target="_blank"><img src="images/thumb/digital_skeletonAxesQuestions.jpg" alt="Skeleton Axes Questions"></a></p>
+          <p><a href="images/full/digital_skeletonAxesQuestions.jpg" target="_blank"><img src="images/thumb/digital_skeletonAxesQuestions.webp" alt="Skeleton Axes Questions" loading="lazy" width="800" height="500"></a></p>
           <p></p>
         </li>
         <li>
-          <p><a href="images/full/digital_starvingSaint.png" target="_blank"><img src="images/thumb/digital_starvingSaint.png" alt="Starving Saint"></a></p>
+          <p><a href="images/full/digital_starvingSaint.png" target="_blank"><img src="images/thumb/digital_starvingSaint.webp" alt="Starving Saint" loading="lazy" width="640" height="1024"></a></p>
           <p>Art for a book by Juho Pohjalainen.</p>
         </li>
         <li>
-          <p><a href="images/full/digital_stoicAndStonefaced.png" target="_blank"><img src="images/thumb/digital_stoicAndStonefaced.png" alt="Stoic and Stonefaced"></a></p>
+          <p><a href="images/full/digital_stoicAndStonefaced.png" target="_blank"><img src="images/thumb/digital_stoicAndStonefaced.webp" alt="Stoic and Stonefaced" loading="lazy" width="280" height="394"></a></p>
           <p></p>
         </li>
         <li>
-          <p><a href="images/full/digital_uniVsMia.png" target="_blank"><img src="images/thumb/digital_uniVsMia.png" alt="Uni vs Miä"></a></p>
+          <p><a href="images/full/digital_uniVsMia.png" target="_blank"><img src="images/thumb/digital_uniVsMia.webp" alt="Uni vs Miä" loading="lazy" width="566" height="800"></a></p>
           <p>Poster art for a short film.</p>
         </li>
-      </div>
+      </ul>
     </section>
     <section id="photography">
       <h2>Photography</h2>
-      <div class="artwork-grid">
+      <ul class="artwork-grid">
         <li>
-          <p><a href="images/full/photo_forestGathering.jpg" target="_blank"><img src="images/thumb/photo_forestGathering.jpg" alt="Forest Gathering"></a></p>
+          <p><a href="images/full/photo_forestGathering.jpg" target="_blank"><img src="images/thumb/photo_forestGathering.webp" alt="Forest Gathering" loading="lazy" width="800" height="450"></a></p>
           <p>Gathering of creatures.</p>
         </li>
         <li>
-          <p><a href="images/full/photo_galleryRoom.jpg" target="_blank"><img src="images/thumb/photo_galleryRoom.jpg" alt="Gallery Room"></a></p>
+          <p><a href="images/full/photo_galleryRoom.jpg" target="_blank"><img src="images/thumb/photo_galleryRoom.webp" alt="Gallery Room" loading="lazy" width="800" height="362"></a></p>
           <p>Gallery exhibition room full of my original works from the Luovuuksien Laineilla exhibition in Meritorni, Kotka.</p>
         </li>
         <li>
-          <p><a href="images/full/photo_garbage1.jpg" target="_blank"><img src="images/thumb/photo_garbage1.jpg" alt="Garbage 1"></a></p>
+          <p><a href="images/full/photo_garbage1.jpg" target="_blank"><img src="images/thumb/photo_garbage1.webp" alt="Garbage 1" loading="lazy" width="800" height="1066"></a></p>
           <p>The resting place for all the studies of art when it does not pay for itself.</p>
         </li>
         <li>
-          <p><a href="images/full/photo_garbage2.jpg" target="_blank"><img src="images/thumb/photo_garbage2.jpg" alt="Garbage 2"></a></p>
+          <p><a href="images/full/photo_garbage2.jpg" target="_blank"><img src="images/thumb/photo_garbage2.webp" alt="Garbage 2" loading="lazy" width="800" height="600"></a></p>
           <p>The final resting place of art studies, continued. In the end, it was almost 2 and half of these garbage cans filled with just my papers and paintings.</p>
         </li>
         <li>
-          <p><a href="images/full/photo_helsinkiBridge.jpg" target="_blank"><img src="images/thumb/photo_helsinkiBridge.jpg" alt="Helsinki Bridge"></a></p>
+          <p><a href="images/full/photo_helsinkiBridge.jpg" target="_blank"><img src="images/thumb/photo_helsinkiBridge.webp" alt="Helsinki Bridge" loading="lazy" width="800" height="1066"></a></p>
           <p>Helsinki bridge.</p>
         </li>
         <li>
-          <p><a href="images/full/photo_helsinkiBridgeRocks.jpg" target="_blank"><img src="images/thumb/photo_helsinkiBridgeRocks.jpg" alt="Helsinki Bridge Rocks"></a></p>
+          <p><a href="images/full/photo_helsinkiBridgeRocks.jpg" target="_blank"><img src="images/thumb/photo_helsinkiBridgeRocks.webp" alt="Helsinki Bridge Rocks" loading="lazy" width="800" height="1066"></a></p>
           <p>Helsinki bridge detail.</p>
         </li>
         <li>
-          <p><a href="images/full/photo_streetsOfHelsinki.jpg" target="_blank"><img src="images/thumb/photo_streetsOfHelsinki.jpg" alt="Streets of Helsinki 1"></a></p>
+          <p><a href="images/full/photo_streetsOfHelsinki.jpg" target="_blank"><img src="images/thumb/photo_streetsOfHelsinki.webp" alt="Streets of Helsinki 1" loading="lazy" width="800" height="600"></a></p>
           <p>Helsinki.</p>
         </li>
         <li>
-          <p><a href="images/full/photo_streetsOfHelsinki2.jpg" target="_blank"><img src="images/thumb/photo_streetsOfHelsinki2.jpg" alt="Streets of Helsinki 2"></a></p>
+          <p><a href="images/full/photo_streetsOfHelsinki2.jpg" target="_blank"><img src="images/thumb/photo_streetsOfHelsinki2.webp" alt="Streets of Helsinki 2" loading="lazy" width="800" height="600"></a></p>
           <p>Helsinki.</p>
         </li>
         <li>
-          <p><a href="images/full/photo_streetsOfKotka.jpg" target="_blank"><img src="images/thumb/photo_streetsOfKotka.jpg" alt="Streets of Kotka 1"></a></p>
+          <p><a href="images/full/photo_streetsOfKotka.jpg" target="_blank"><img src="images/thumb/photo_streetsOfKotka.webp" alt="Streets of Kotka 1" loading="lazy" width="589" height="1306"></a></p>
           <p>Kotka streets.</p>
         </li>
         <li>
-          <p><a href="images/full/photo_streetsOfKotka2.jpeg" target="_blank"><img src="images/thumb/photo_streetsOfKotka2.jpeg" alt="Streets of Kotka 2"></a></p>
+          <p><a href="images/full/photo_streetsOfKotka2.jpeg" target="_blank"><img src="images/thumb/photo_streetsOfKotka2.webp" alt="Streets of Kotka 2" loading="lazy" width="589" height="1306"></a></p>
           <p>More Kotka streets.</p>
         </li>
         <li>
-          <p><a href="images/full/photo_streetsOfKotka3.jpg" target="_blank"><img src="images/thumb/photo_streetsOfKotka3.jpg" alt="Streets of Kotka 3"></a></p>
+          <p><a href="images/full/photo_streetsOfKotka3.jpg" target="_blank"><img src="images/thumb/photo_streetsOfKotka3.webp" alt="Streets of Kotka 3" loading="lazy" width="800" height="360"></a></p>
           <p>And more Kotka streets.</p>
         </li>
-      </div>
+      </ul>
     </section>
     <section id="contact">
       <div class="contact">
